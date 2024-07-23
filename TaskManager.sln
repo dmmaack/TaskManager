@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Application", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Domain", "TaskManager.Domain\TaskManager.Domain.csproj", "{BB1AC303-7A41-4A24-838C-6688E2C27ADF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Tests", "TaskManager.Tests\TaskManager.Tests.csproj", "{F0C45EEF-28BE-4CC0-ACF1-3BEBB38E0098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.CrossCutting", "TaskManager.CrossCutting\TaskManager.CrossCutting.csproj", "{DF751B28-4513-48C7-834F-9B326E010D55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +46,13 @@ Global
 		{BB1AC303-7A41-4A24-838C-6688E2C27ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB1AC303-7A41-4A24-838C-6688E2C27ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB1AC303-7A41-4A24-838C-6688E2C27ADF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C45EEF-28BE-4CC0-ACF1-3BEBB38E0098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C45EEF-28BE-4CC0-ACF1-3BEBB38E0098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C45EEF-28BE-4CC0-ACF1-3BEBB38E0098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C45EEF-28BE-4CC0-ACF1-3BEBB38E0098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF751B28-4513-48C7-834F-9B326E010D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF751B28-4513-48C7-834F-9B326E010D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF751B28-4513-48C7-834F-9B326E010D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF751B28-4513-48C7-834F-9B326E010D55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
