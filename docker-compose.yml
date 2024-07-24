@@ -1,12 +1,19 @@
-opversion: '3.9'
-  
-  db:
-    container_name: sqlserver
-    image: mcr.microsoft.com/mssql/server:latest
+networks:
+  app:
+    driver: bridge
+
+volumes:
+  sqlvolume:
+  seqdata:
+
+services:
+  sqlserver:
+    container_name: sqlserver-dev
+    image: mcr.microsoft.com/mssql/server:2019-latest
     environment:
       SA_PASSWORD: "Dmm@dmaack4641"
       ACCEPT_EULA: "Y"
-      MSSQL_PID: "Development"
+      MSSQL_PID: "Developer"
     ports:
       - "1433:1433"
     volumes:
@@ -15,9 +22,8 @@ opversion: '3.9'
     networks:
       - app
 
-services:
-  TaskManager-Api:
-    container_name: TaskManager-Api
+  container-taskmanager:
+    container_name: container-taskmanager-dev
     build:
       context: .
       dockerfile: Dockerfile
@@ -25,6 +31,6 @@ services:
       - "5048:5048"
       - "7220:7220"
     depends_on:
-      - db
+      - sqlserver
     networks:
       - app
