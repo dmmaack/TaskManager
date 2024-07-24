@@ -10,8 +10,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app ./
 
-ENV ASPNETCORE_URLS=http://+:5048;https://+:7220
-ENV ASPNETCORE_ENVIRONMENT=Development
+ENV ASPNETCORE_URLS=http://+:5000;https://+:5001
+ENV ASPNETCORE_ENVIRONMENT=Homolog
 
 EXPOSE 5048 7220
 
